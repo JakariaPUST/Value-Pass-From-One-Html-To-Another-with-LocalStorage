@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+<!--
+<form action="index2.html" method="get">
+		<table>
+			<tr><td>Name:</td><td> <input type="text" name="name"></td></tr>
+			<tr><td>Email:</td><td> <input type="text" name="email"></td></tr>
+			<tr><td></td><td> <input type="submit" value="Submit"></td></tr>
+		</table>
+	</form> -->
+<!--
+<h1>Value sender to index2.html </h1>
+<button onclick="valueSender()">Send value</button>
+<script>
+	function valueSender()
+	{
+		var a=10000;
+		localStorage.setItem("myvalue", a);
+		window.location.href="index2.html";
+
+	}
+</script>
+
+-->
+
+
+
+
+
+
+
+
+<!--
+<p id="dmo">1111548964</p>
+
+<h3 id="name"> </h3>
+
+    <script type="text/javascript"> 
+        var y= document.getElementById("dmo").innerText;
+        localStorage.setItem("text", "zzzzzzz");
+        console.log(y);
+
+        document.getElementById("name").innerHTML=localStorage.getItem("text");
+    </script>
+
+-->
+
+
+
+
+<!--
+
+    <p id="name"> </p>
+
+
+    <script type="text/javascript"> 
+    	localStorage.setItem("text", "John");
+        var x = "Hello my name is " + localStorage.getItem("text");
+        document.getElementById("name").innerHTML = x; 
+    </script>
+
+
+-->
+
+<div class='mb-5 mt-5'>
+    <p id="txt2">CIN: {{ consumer.username }}</p>
+    <p>Phone Number: {{ consumer.country.callingCodes }}{{ consumer.phone }}</p>
+    <p>Consumer Name: {{ consumer.user_full_name }}</p>
+    <input type="button" value="Select" onclick="passvalues()" />
+</div>
+
+<script>
+	function passvalues()
+	{
+		var a=document.getElementById("txt2").innerText;
+		localStorage.setItem("textvalue", a);
+		window.location.href="index2.html";
+		return false;
+
+	}
+</script>
+
+
+</body>
+</html>

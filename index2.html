@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>INDEX2</title>
+</head>
+<body>
+	<center>
+	<h1>Value Receiver </h1>
+	WElcome.... <span id="result"></span>
+	</center>
+	<center>
+		<h1>Result1: </h1>
+	</center>
+<!--	
+<script>
+		var b=window.location.search;
+		alert("Received values:" + b);
+		
+</script> -->
+<!--
+<script>
+		var b=localStorage.getItem("myvalue");
+		alert("Received value is:" + b);
+		var resetValue=0;
+		localStorage.setItem("myvalue", resetValue);
+</script>
+-->
+
+
+<script>
+		document.getElementById("result").innerHTML=localStorage.getItem("textvalue");
+		var resetValue=0;
+		localStorage.setItem("myvalue", resetValue);
+</script>
+</body>
+</html>
+
